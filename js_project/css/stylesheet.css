@@ -1,0 +1,74 @@
+html{
+  font-size:100%;
+  box-sizing:border-box;
+}
+body{
+  font-family: sans-serif;
+  background:#fff;
+  color:#333;
+  margin:0;
+}
+h1, h2{
+  font-family: serif;
+  text-align: center;
+}
+img{
+  display:block;
+  width:100%;
+  max-width: 400px;
+  max-height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#container{
+  max-width: 1280px;
+  margin:auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4,auto);
+  grid-template-areas:
+    "header"
+    "text"
+    "colors"
+    "predators";
+}
+  header {
+    grid-area: header;
+    background:#003d10;
+    color:#fff;
+    text-align: center;
+    padding:1em;
+    border-bottom: 5px solid #fff;
+  }
+  #text {
+    grid-area: text;
+    background:#003d10;
+    color: #fff;
+    text-align: center;
+    padding:2em;
+    font-size: 18px;
+  }
+  #colors{
+    grid-area: colors;
+    background: #003d10;
+    color:#fff;
+    text-align: center;
+}
+  #predators{
+    grid-area: predators;
+    background: #003d10;
+    color:#fff;
+    text-align: center;
+    align-items: center;
+    padding: 2em;
+  }
+
+  a:link{
+    color: #E9E3E3;
+  }
+  a:hover {
+    color:#E9E6E3;
+  }
+  a:visited{
+    color: #E9E9E3;
+  }
